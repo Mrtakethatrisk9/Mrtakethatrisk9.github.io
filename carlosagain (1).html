@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+  <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">">
+  <style>
+    header {
+      text-align: center;
+      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtRvUE290lWf5YoXpPz5lGu6lEmdmiElor4fKxL-jR3TZY3Npqboe2Uov7YMM&s);
+      background-size: cover;
+      color: yellow;
+      background-color: green;
+    }
+    a {
+      color: red;
+      
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+      
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      color: yellow;
+    }
+    body { 
+            background-color: green;
+	}
+	button {
+			float: left;
+			margin-right: 10px;
+		}
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+        
+      }
+      li {
+        padding: 5px;
+        display: block;
+        
+      }
+
+	  
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://www.dexerto.com/cdn-cgi/image/width=750,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2021/01/Fortnite-best-skins.jpg">
+    <h1>How to become the best fortnite player!
+    (only takes five sec)</h1>
+    <ul>
+      <li><a href="https://www.behindthename.com/name/carlos/comments">epic games</a></li>
+      <li><a href="https://earlygame.com/fortnite/best-double-movement-settings">best fortnite momments </a></li>
+      <li><a href="#https://gamerdvr.com/games/267695549/videos">W clips</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Why play fortnite?</h2>
+    <p>Fortnite is a beautiful game, they got people like brandon and dennis playing everyday since their fat. many people think fortnite is not for them well they are wrong its a good game wtv. </p>
+    <button class="likeButtons">Like</button>
+	 <div class="numLikes">0</div>
+  </article>
+  
+  <article>
+    <h2>Camping inside a bush </h2>
+    <p>When ever i play fortnite with my fat friends called Denis and Brandon we always lose sometimes we win in rank but we actully don't. A sollution that can fix this by bush camping you can rank up in fort faster</p>
+    <button class="likeButtons">Like</button>
+	 <div class="numLikes">0</div>
+  </article>
+  <article>
+    <h2>The map</h2>
+    <p>the map gets you alot of loot its really good gold whepons and everything </p>
+    <button class="likeButtons">Like</button>
+	 <div class="numLikes">0</div>
+  </article>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+  
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAtwseUOLyLVZcG_v7EVaitB5z-4qdV7iY",
+    authDomain: "carlosagain-b3cbb.firebaseapp.com",
+    projectId: "carlosagain-b3cbb",
+    storageBucket: "carlosagain-b3cbb.appspot.com",
+    messagingSenderId: "610128542255",
+    appId: "1:610128542255:web:3559534bd75697b359a4da",
+    measurementId: "G-WV0JMCW2MX"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  const db = getDatabase(app);
+	const LikeButtons = document.querySelectorAll('.likeButtons')
+	const numLikes = document.querySelectorAll('.numLikes')
+  
+  
+  for (let i=0; i<LikeButtons.length; i++) {
+	  LikeButtons[i].addEventListener('click', function(){ Like(i) })
+	  onValue(ref(db, "/article "+i+"/numLikes"), (snapshot) => {
+		    let data = snapshot.val();
+		    numLikes[i].innerHTML = data
+	  });
+	  
+  }
+
+  function Like(i) {
+	  const numberLikes = parseInt(numLikes[i].innerHTML) + 1
+	  set(ref(db, "article " + i), {
+		  numLikes: numberLikes,
+	  });
+  }
+  onValue(ref(db, "/article "+i+"/numLikes"), (snapshot) => {
+	    let data = snapshot.val();
+	    numLikes[i].innerHTML = data
+  });
+  
+</script>
+  
+
+
+</body>
