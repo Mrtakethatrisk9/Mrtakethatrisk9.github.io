@@ -1,149 +1,239 @@
 <!DOCTYPE html>
 <head>
-  <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+<script src="/assets/jquery.js"></script>
+<link href=<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">">
-  <style>
-    header {
-      text-align: center;
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtRvUE290lWf5YoXpPz5lGu6lEmdmiElor4fKxL-jR3TZY3Npqboe2Uov7YMM&s);
-      background-size: cover;
-      color: yellow;
-      background-color: green;
-    }
-    a {
-      color: red;
-      
-    }
-    h1 {
-      font-size: 70px;
-    }
-    img {
-      margin: 40px 0px 0px 0px;
-      border: 7px solid white;
-      border-radius: 20px;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
-      
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-      
-    }
-    article {
-      max-width: 500px;
-      padding: 20px;
-      margin: 0 auto;
-      color: yellow;
-    }
-    body { 
-            background-color: green;
+<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+<style>
+	
+	input {
+		font-size: 22px;
 	}
-	button {
-			float: left;
-			margin-right: 10px;
-		}
 
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-        padding: 5px;
-        
-      }
-      li {
-        padding: 5px;
-        display: block;
-        
-      }
+	
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: purple;
+}
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: yellow;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: orange;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
 
-	  
-    }
-  </style>
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://wearenotmartha.com/wp-content/uploads/breakfast-burger-featured.jpg");
+}
+.second{
+  background-image: url("https://www.kitchensanctuary.com/wp-content/uploads/2021/03/Egg-fried-rice-square-FS-40.jpg");
+}
+.dessert{
+  .background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210910/pngtree-real-shot-delicious-and-tempting-fried-chicken-hd-fried-chicken-gourmet-image_838697.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
 </head>
-<body>
-  <header>
-    <img src="https://www.dexerto.com/cdn-cgi/image/width=750,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2021/01/Fortnite-best-skins.jpg">
-    <h1>How to become the best fortnite player!
-    (only takes five sec)</h1>
-    <ul>
-      <li><a href="https://www.behindthename.com/name/carlos/comments">epic games</a></li>
-      <li><a href="https://earlygame.com/fortnite/best-double-movement-settings">best fortnite momments </a></li>
-      <li><a href="#https://gamerdvr.com/games/267695549/videos">W clips</a></li>
-    </ul>
-  </header>
-  <article>
-    <h2>Why play fortnite?</h2>
-    <p>Fortnite is a beautiful game, they got people like brandon and dennis playing everyday since their fat. many people think fortnite is not for them well they are wrong its a good game wtv. </p>
-    <button class="likeButtons">Like</button>
-	 <div class="numLikes">0</div>
-  </article>
-  
-  <article>
-    <h2>Camping inside a bush </h2>
-    <p>When ever i play fortnite with my fat friends called Denis and Brandon we always lose sometimes we win in rank but we actully don't. A sollution that can fix this by bush camping you can rank up in fort faster</p>
-    <button class="likeButtons">Like</button>
-	 <div class="numLikes">0</div>
-  </article>
-  <article>
-    <h2>The map</h2>
-    <p>the map gets you alot of loot its really good gold whepons and everything </p>
-    <button class="likeButtons">Like</button>
-	 <div class="numLikes">0</div>
-  </article>
 
+<body>
+<h1>zesty resturant</h1>
+<h2>a New York City first zesty resturant </h2>
+<div class="first">
+	 <input class="quantities" type="number" min="0" style="width: 50px">
+  <p> hamburger  <span class="price">$80</span><br />
+  <small>comes with millions of burgers and it taste delisous its magicly delisuois . </small></p>
+</div>
+
+<div class="second">
+	 <input  class="quantities" type="number"  min="0" style="width: 50px">
+  <p>waffle  <span class="price">$22</span><br />
+  <small>it might look like one but there a bunch of flavors in this one waffle that you would want to buy more .</small></p>
+</div>
+  
+<div class="dessert">
+	 <input class="quantities" type="number:" min="0" style="width: 50px">
+  <p> chicken  <span class="price">$8</span><br />
+  <small>did someone say blm? well come taste our tasty chicken only for eight dollars .</small></p>
+</div>
+  <input id="Name" type="Name:" placeholder="Name:">
+  <input id="Email" type="Your email" placeholder="Your email">
+  <input id="submit" type="submit">
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+
+  });
+</script>
 <script type="module">
   // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-  import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
-  
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+
+  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "AIzaSyAtwseUOLyLVZcG_v7EVaitB5z-4qdV7iY",
-    authDomain: "carlosagain-b3cbb.firebaseapp.com",
-    projectId: "carlosagain-b3cbb",
-    storageBucket: "carlosagain-b3cbb.appspot.com",
-    messagingSenderId: "610128542255",
-    appId: "1:610128542255:web:3559534bd75697b359a4da",
-    measurementId: "G-WV0JMCW2MX"
+    apiKey: "AIzaSyA2g4TKegmLbefyHsBls-Toic6oNhHTFgs",
+    authDomain: "lolsa-2ce77.firebaseapp.com",
+    projectId: "lolsa-2ce77",
+    storageBucket: "lolsa-2ce77.appspot.com",
+    messagingSenderId: "195109986456",
+    appId: "1:195109986456:web:9e0fb5a2265cf2fdfbf0ed",
+    measurementId: "G-ZKJR7YHY7X"
   };
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
 
-  const db = getDatabase(app);
-	const LikeButtons = document.querySelectorAll('.likeButtons')
-	const numLikes = document.querySelectorAll('.numLikes')
+
+   
+const db = getDatabase(app);
+
+const Name = document.querySelector("#Name") 
+const Email = document.querySelector("#Email")
+document.querySelector('#submit').addEventListener('click', Submit)
+const prices = document.querySelectorAll(".price") 
+const quantities = document.querySelectorAll(".quantities") 
+const itemsList = ["hamburger", "waffle", "chicken"]
+
+
+function Submit() {
+	  const timestamp = buildTimestamp()
+	  let total = 0
+      let cart = { }
+   	  for  (let i=0; i<quantities.length; i=i+1) {
+   	  if (quantities[i].value != "0" && quantities[i].value != "") {
+      let price = prices[i].innerHTML.replace('$', '')
+	  total = total + quantities[i].value * price 
+		  	
+   	  cart[itemsList[i]] = parseInt(quantities[i].value) 
+   	  	}
+   	  	quantities[i].value = ""
+   	  }
+	
+	
   
-  
-  for (let i=0; i<LikeButtons.length; i++) {
-	  LikeButtons[i].addEventListener('click', function(){ Like(i) })
-	  onValue(ref(db, "/article "+i+"/numLikes"), (snapshot) => {
-		    let data = snapshot.val();
-		    numLikes[i].innerHTML = data
+	  set(ref(db, timestamp), {
+		  Name: Name.value,
+	      email: Email.value,
+		  cart: cart,
+          totalPrice: total,
+		  paid: "not yet", 
+		  
 	  });
-	  
-  }
 
-  function Like(i) {
-	  const numberLikes = parseInt(numLikes[i].innerHTML) + 1
-	  set(ref(db, "article " + i), {
-		  numLikes: numberLikes,
-	  });
-  }
-  onValue(ref(db, "/article "+i+"/numLikes"), (snapshot) => {
-	    let data = snapshot.val();
-	    numLikes[i].innerHTML = data
-  });
-  
-</script>
-  
+	  Name.value = ""
+	  Email.value = ""
+	}
 
+	function buildTimestamp() {
+		  const now = new Date();
+		  let timestamp = now.getFullYear().toString() + "/";
+		  //const month = now.toLocaleString('default', { month: 'long' });
 
+		  let month = now.getMonth()+1   //add 1 because Javascript uses 0 for January
+		  month = month.toString()
+		  month = addLeadingZero(month)
+		  timestamp += month + "/"; 
+
+		  let date = now.getDate().toString()
+		  date = addLeadingZero(date)
+		  timestamp += date + "/";
+
+		  let hours = now.getHours().toString()
+		  hours = addLeadingZero(hours)
+		  timestamp += hours + ":";
+
+		  let minutes = now.getMinutes().toString()
+		  minutes = addLeadingZero(minutes)
+		  timestamp += minutes + ":";
+
+		  let seconds = now.getSeconds().toString()
+		  seconds = addLeadingZero(seconds)
+		  timestamp += seconds;
+ 
+		  return timestamp
+		}
+
+		function addLeadingZero(units) {
+			if (units.length < 2) {
+				units = "0" + units
+			}
+			return units
+		}
+ </script>
+   
 </body>
